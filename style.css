@@ -141,9 +141,19 @@ input:focus {
   flex-direction: row;
 }
 
-.inner--width {
-  max-width: 75%;
+.inner--gender {
+  max-width: 284px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
+
+.radio--gender {
+  max-width: 95px;
+  width: 100%;
+}
+
 
 .inner--column {
   display: flex;
@@ -173,10 +183,6 @@ input:focus {
 }
 
 
-.inner-lable--mr {
-  margin-right: 63px;
-}
-
 .radio__text,
 .checkbox__text {
   color: var(--primary-color);
@@ -204,10 +210,6 @@ input:focus {
 .radio:active {
   box-shadow: 0 0 0 1px #59D4AD;
   border-radius: 4px;
-}
-
-.radio--mr {
-  margin-right: px;
 }
 
 .radio--mb {
