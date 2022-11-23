@@ -40,7 +40,6 @@ body {
   letter-spacing: -0.02em;
   margin-top: 119px;
   margin-bottom: 42px;
-  text-align: center;
 }
 
 .form {
@@ -67,8 +66,8 @@ body {
   display: flex;
   flex-direction: column;
   border-bottom: 1px solid #E0E0E0;
-  padding-bottom: 24px;
-  margin-bottom: 24px;
+  padding-bottom: 15px;
+  margin-bottom: 15px;
 }
 
 
@@ -103,6 +102,7 @@ body {
 }
 input:focus {
   box-shadow: 0 0 0 1px #59D4AD;
+  background-color: #F8F8F8;
 }
 
 .label {
@@ -119,12 +119,9 @@ input:focus {
 .wrapper-top--mb {
   margin-bottom: 18px;
 }
-.data-top--mb {
-  margin-bottom: 40px;
-}
 
 .label--bottom {
-  margin-bottom: 16px;
+  margin-bottom: 7px;
 }
 
 .wrapper-bottom {
@@ -133,7 +130,7 @@ input:focus {
 }
 
 .wrapper-bottom--mb {
-  margin-bottom: 33px;
+  margin-bottom: 30px;
 }
 
 .inner {
@@ -142,16 +139,11 @@ input:focus {
 }
 
 .inner--gender {
-  max-width: 284px;
+  max-width: 265px;
   width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-}
-
-.radio--gender {
-  max-width: 95px;
-  width: 100%;
 }
 
 
@@ -196,15 +188,33 @@ input:focus {
   color: #59D4AD;
 }
 
+
 .radio {
   width: 100%;
   height: 100%;
   position: relative;
-  display: inline-flex;
+  display: flex;
   cursor: pointer;
   align-items: center;
-  padding: 9px;
   margin-left: -9px;
+}
+
+.radio--male{
+  max-width: 78px;
+  width: 100%;
+  padding: 9px;
+}
+
+.radio--female{
+  max-width: 96px;
+  width: 100%;
+  padding: 9px;
+}
+
+.radio--other{
+  max-width: 84px;
+  width: 100%;
+  padding: 9px;
 }
 
 .radio:active {
@@ -214,6 +224,24 @@ input:focus {
 
 .radio--mb {
   margin-bottom: 7px;
+}
+
+.radio--column-1 {
+  max-width: 175px;
+  width: 100%;
+  padding: 9px;
+}
+
+.radio--column-2 {
+  max-width: 331px;
+  width: 100%;
+  padding: 9px;
+}
+
+.radio--column-3 {
+  max-width: 101px;
+  width: 100%;
+  padding: 9px;
 }
 
 .radio__input {
@@ -260,14 +288,30 @@ input:focus {
 }
 
 .checkbox {
+  max-width: 394px;
+  width: 100%;
   position: relative;
   display: inline-flex;
   cursor: pointer;
   align-items: center;
+  padding: 9px;
+  margin-left: -9px;
+  outline: 1px solid transparent;
+  border-radius: 4px;
+  transition: all .3s ease;
+}
+
+.checkbox__text:hover {
+  color: #59D4AD;
+}
+
+.checkbox:active,
+.checkbox:active {
+  outline: 1px solid #59D4AD;
 }
 
 .checkbox--mb {
-  margin-bottom: 56px;
+  margin-bottom: 47px;
 }
 
 .checkbox__input {

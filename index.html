@@ -8,173 +8,170 @@
     <title>Complex Form</title>
   </head>
   <body>
-    <h1 class="title">Continue entering data</h1>
-    <form class="form">
-      <div class="form__top form__top--mb">
-        <div class="wrapper-top wrapper-top--half wrapper-top--mb">
-          <label class="label label--top" for="first-name">First Name</label>
-          <input
-            class="input"
-            type="text"
-            id="first-name"
-            required
-            minlength="1"
-            maxlength="20"
-          />
-        </div>
-        <div class="wrapper-top wrapper-top--half wrapper-top--mb">
-          <label class="label label--top" for="last-name">First Name</label>
-          <input
-            class="input"
-            type="text"
-            id="last-name"
-            required
-            minlength="1"
-            maxlength="20"
-          />
-        </div>
-        <div class="wrapper-top wrapper-top--mb">
-          <label class="label label--top" for="tel">Phone Number</label>
-          <input
-            class="input"
-            type="tel"
-            id="tel"
-            required
-            minlength="10"
-            maxlength="30"
-          />
-        </div>
-        <div class="wrapper-top wrapper-top--mb">
-          <label class="label label--top" for="country">Country</label>
-          <input
-            class="input"
-            type="text"
-            id="country"
-            required
-            minlength="10"
-            maxlength="30"
-          />
-        </div>
-        <div class="wrapper-top wrapper-top--half wrapper-top--mb">
-          <label class="label label--top" for="city">City</label>
-          <input class="input" type="text" id="city" required />
-        </div>
-        <div class="wrapper-top wrapper-top--half">
-          <label class="label label--top" for="street">Street</label>
-          <input class="input" type="text" id="street" required />
-        </div>
-      </div>
-
-      <div class="form__bottom">
-        <div class="wrapper-bottom wrapper-bottom--mb">
-          <label class="label label--bottom" for="gender">Legal Gender</label>
-          <div class="inner inner--gender">
-            <label class="radio radio--gender">
-              <input
-                class="radio__input"
-                type="radio"
-                name="gender"
-                value="Male"
-                required
-              />
-              <span class="radio__button"></span>
-              <span class="radio__text">Male</span>
-            </label>
-            <label class="radio radio--gender">
-              <input
-                class="radio__input"
-                type="radio"
-                name="gender"
-                value="Female"
-                required
-              />
-              <span class="radio__button"></span>
-              <span class="radio__text">Female</span>
-            </label>
-            <label class="radio radio--gender">
-              <input
-                class="radio__input"
-                type="radio"
-                name="gender"
-                value="Other"
-                required
-              />
-              <span class="radio__button"></span>
-              <span class="radio__text">Other</span>
-            </label>
-          </div>
-        </div>
-        <div class="wrapper-bottom">
-          <label class="label label--bottom" for="gender"
-            >Notify me about...</label
-          >
-          <div class="inner inner--column">
-            <label class="radio radio--mb">
-              <input
-                class="radio__input"
-                type="radio"
-                name="gender"
-                value="All new messages"
-                required
-              />
-              <span class="radio__button"></span>
-              <span class="radio__text">All new messages</span>
-            </label>
-
-            <label class="radio radio--mb">
-              <input
-                class="radio__input"
-                type="radio"
-                name="gender"
-                value="Direct messages, mentions & keywords"
-                required
-              />
-              <span class="radio__button"></span>
-              <span class="radio__text"
-                >Direct messages, mentions & keywords</span
-              >
-            </label>
-
-            <label class="radio">
-              <input
-                class="radio__input"
-                type="radio"
-                name="gender"
-                value="Nothing"
-                required
-              />
-              <span class="radio__button"></span>
-              <span class="radio__text">Nothing</span>
-            </label>
-          </div>
-        </div>
-      </div>
-      <label class="checkbox checkbox--mb">
-        <input
-          class="checkbox__input"
-          type="checkbox"
-          name="Notify"
-          value="Notify me about replies to threads I’m following"
-          required
-        />
-        <span class="checkbox__button">
-          <svg
-            class="checkbox__icon"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              fillRule="evenodd"
-              clipRule="evenodd"
-              d="M20.7071 6.29289C21.0976 6.68342 21.0976 7.31658 20.7071 7.70711L9.70711 18.7071C9.31658 19.0976 8.68342 19.0976 8.29289 18.7071L3.29289 13.7071C2.90237 13.3166 2.90237 12.6834 3.29289 12.2929C3.68342 11.9024 4.31658 11.9024 4.70711 12.2929L9 16.5858L19.2929 6.29289C19.6834 5.90237 20.3166 5.90237 20.7071 6.29289Z"
+    <div class="cantainer">
+      <h1 class="title">Continue entering data</h1>
+      <form class="form">
+        <div class="form__top form__top--mb">
+          <div class="wrapper-top wrapper-top--half wrapper-top--mb">
+            <label class="label label--top" for="first-name">First Name</label>
+            <input
+              class="input"
+              type="text"
+              id="first-name"
+              required
+              minlength="1"
+              maxlength="20"
             />
-          </svg>
-        </span>
-        <span class="checkbox__text"
-          >Notify me about replies to threads I’m following</span
-        >
-      </label>
-      <button class="button botton__form">Start Application</button>
-    </form>
+          </div>
+          <div class="wrapper-top wrapper-top--half wrapper-top--mb">
+            <label class="label label--top" for="last-name">First Name</label>
+            <input
+              class="input"
+              type="text"
+              id="last-name"
+              required
+              minlength="1"
+              maxlength="20"
+            />
+          </div>
+          <div class="wrapper-top wrapper-top--mb">
+            <label class="label label--top" for="tel">Phone Number</label>
+            <input
+              class="input"
+              type="tel"
+              id="tel"
+              required
+              minlength="10"
+              maxlength="30"
+            />
+          </div>
+          <div class="wrapper-top wrapper-top--mb">
+            <label class="label label--top" for="country">Country</label>
+            <input
+              class="input"
+              type="text"
+              id="country"
+              required
+              minlength="10"
+              maxlength="30"
+            />
+          </div>
+          <div class="wrapper-top wrapper-top--half">
+            <label class="label label--top" for="city">City</label>
+            <input class="input" type="text" id="city" required />
+          </div>
+          <div class="wrapper-top wrapper-top--half">
+            <label class="label label--top" for="street">Street</label>
+            <input class="input" type="text" id="street" required />
+          </div>
+        </div>
+        <div class="form__bottom">
+          <div class="wrapper-bottom wrapper-bottom--mb">
+            <label class="label label--bottom">Legal Gender</label>
+            <div class="inner inner--gender">
+              <label class="radio radio--male">
+                <input
+                  class="radio__input"
+                  type="radio"
+                  name="gender"
+                  value="Male"
+                  required
+                />
+                <span class="radio__button"></span>
+                <span class="radio__text">Male</span>
+              </label>
+              <label class="radio radio--female">
+                <input
+                  class="radio__input"
+                  type="radio"
+                  name="gender"
+                  value="Female"
+                  required
+                />
+                <span class="radio__button"></span>
+                <span class="radio__text">Female</span>
+              </label>
+              <label class="radio radio--other">
+                <input
+                  class="radio__input"
+                  type="radio"
+                  name="gender"
+                  value="Other"
+                  required
+                />
+                <span class="radio__button"></span>
+                <span class="radio__text">Other</span>
+              </label>
+            </div>
+          </div>
+          <div class="wrapper-bottom">
+            <label class="label label--bottom" for="gender"
+              >Notify me about...</label
+            >
+            <div class="inner inner--column">
+              <label class="radio radio--mb radio--column-1">
+                <input
+                  class="radio__input"
+                  type="radio"
+                  name="gender"
+                  value="All new messages"
+                  required
+                />
+                <span class="radio__button"></span>
+                <span class="radio__text">All new messages</span>
+              </label>
+              <label class="radio radio--mb radio--column-2">
+                <input
+                  class="radio__input"
+                  type="radio"
+                  name="gender"
+                  value="Direct messages, mentions & keywords"
+                  required
+                />
+                <span class="radio__button"></span>
+                <span class="radio__text"
+                  >Direct messages, mentions & keywords</span
+                >
+              </label>
+              <label class="radio radio--column-3">
+                <input
+                  class="radio__input"
+                  type="radio"
+                  name="gender"
+                  value="Nothing"
+                  required
+                />
+                <span class="radio__button"></span>
+                <span class="radio__text">Nothing</span>
+              </label>
+            </div>
+          </div>
+        </div>
+        <label class="checkbox checkbox--mb">
+          <input
+            class="checkbox__input"
+            type="checkbox"
+            name="Notify"
+            value="Notify me about replies to threads I’m following"
+            required
+          />
+          <span class="checkbox__button">
+            <svg
+              class="checkbox__icon"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M20.7071 6.29289C21.0976 6.68342 21.0976 7.31658 20.7071 7.70711L9.70711 18.7071C9.31658 19.0976 8.68342 19.0976 8.29289 18.7071L3.29289 13.7071C2.90237 13.3166 2.90237 12.6834 3.29289 12.2929C3.68342 11.9024 4.31658 11.9024 4.70711 12.2929L9 16.5858L19.2929 6.29289C19.6834 5.90237 20.3166 5.90237 20.7071 6.29289Z"
+              />
+            </svg>
+          </span>
+          <span class="checkbox__text"
+            >Notify me about replies to threads I’m following</span
+          >
+        </label>
+        <button class="button botton__form">Start Application</button>
+      </form>
+    </div>
   </body>
 </html>
