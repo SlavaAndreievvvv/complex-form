@@ -98,12 +98,14 @@ body {
 }
 
 .input:hover {
-  background: #EDF9F5;
+  background-color: #EDF9F5;
 }
-input:focus {
+
+.input:focus {
   box-shadow: 0 0 0 1px #59D4AD;
   background-color: #F8F8F8;
 }
+
 
 .label {
   color: var(--secondary-color);
