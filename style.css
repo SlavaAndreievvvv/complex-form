@@ -1,0 +1,358 @@
+@import url(https://fonts.googleapis.com/css?family=Work+Sans:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+@import url(https://fonts.googleapis.com/css?family=Public+Sans:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+}
+
+:root {
+  --base-font: Public Sans, sans-serif;
+  --secondary-font: 'Work Sans', sans-serif;
+  --primary-color: black;
+  --secondary-color: #8A8E94;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: var(--base-font);
+  padding-left: 20px;
+  padding-right: 20px;
+}
+  
+.title {
+  font-family: var(--secondary-font);
+  color: var(--primary-color);
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 49px;
+  letter-spacing: -0.02em;
+  margin-top: 119px;
+  margin-bottom: 42px;
+}
+
+.form {
+  max-width: 586px;
+  width: 100%;
+  margin-bottom: 119px;
+}
+
+.form__top {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+
+.form__bottom {
+  height: 100%;
+  max-width: 375px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid #E0E0E0;
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+}
+
+
+.wrapper-top {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapper-top--half {
+  max-width: 285px;
+  width: 100%;
+}
+@media screen and (max-width: 575px) {
+  .wrapper-top--half {
+    max-width: 586px;
+    width: 100%;
+  }
+}
+
+.input {
+  height: 56px;
+  width: 100%;
+  background: #F8F8F8;
+  border-radius: 4px;
+  padding-left: 20px;
+  transition: all .3s ease;
+}
+
+.input:hover {
+  background-color: #EDF9F5;
+}
+
+.input:focus {
+  box-shadow: 0 0 0 1px #59D4AD;
+  background-color: #F8F8F8;
+}
+
+
+.label {
+  color: var(--secondary-color);
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+}
+
+.label--top {
+  margin-bottom: 6px;
+}
+
+.wrapper-top--mb {
+  margin-bottom: 18px;
+}
+
+.label--bottom {
+  margin-bottom: 7px;
+}
+
+.wrapper-bottom {
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapper-bottom--mb {
+  margin-bottom: 30px;
+}
+
+.inner {
+  display: flex;
+  flex-direction: row;
+}
+
+.inner--gender {
+  max-width: 265px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+
+.inner--column {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.button {
+  width: 100%;
+  height: 60px;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  color: var(--primary-color);
+  background: #59D5AD;
+  border-radius: 4px;
+  transition: all .3s ease;
+  cursor: pointer;
+}
+
+.button:hover {
+  background: #48C09A;
+}
+.button:focus {
+  box-shadow: 0 0 0 1px black;
+}
+
+
+.radio__text,
+.checkbox__text {
+  color: var(--primary-color);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  transition: all .3s ease;
+}
+
+.radio__text:hover {
+  color: #59D4AD;
+}
+
+
+.radio {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  margin-left: -9px;
+}
+
+.radio--male{
+  max-width: 78px;
+  width: 100%;
+  padding: 9px;
+}
+
+.radio--female{
+  max-width: 96px;
+  width: 100%;
+  padding: 9px;
+}
+
+.radio--other{
+  max-width: 84px;
+  width: 100%;
+  padding: 9px;
+}
+
+.radio:active,
+.radio:focus {
+  outline: 1px solid #59D4AD;
+  border-radius: 4px;
+}
+
+.radio--mb {
+  margin-bottom: 7px;
+}
+
+.radio--column-1 {
+  max-width: 175px;
+  width: 100%;
+  padding: 9px;
+}
+
+.radio--column-2 {
+  max-width: 331px;
+  width: 100%;
+  padding: 9px;
+}
+
+.radio--column-3 {
+  max-width: 101px;
+  width: 100%;
+  padding: 9px;
+}
+
+.radio__input {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+.radio__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 14px;
+  height: 14px;
+  border: 1.16667px solid #C4C4C4;
+  border-radius: 50%;
+  background-color: white;
+  transition-property: border-color background-color;
+  transition-duration: 0.2s;
+  transition-timing-function: ease;
+  position: relative;
+  margin-right: 9px;
+}
+
+.radio__button::after {
+  position: absolute;
+  content: "";
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  opacity: 0;
+  top: 2.5px;
+  left: 2.4px;
+  background-color: black;
+  transition: opacity 0.2s ease;
+}
+
+.radio__input:checked + .radio__button {
+  border: 1.16667px solid #000000;
+}
+
+.radio__input:checked + .radio__button::after {
+  opacity: 1;
+}
+
+.checkbox {
+  max-width: 394px;
+  width: 100%;
+  position: relative;
+  display: inline-flex;
+  cursor: pointer;
+  align-items: center;
+  padding: 9px;
+  margin-left: -9px;
+  outline: 1px solid transparent;
+  border-radius: 4px;
+  transition: all .3s ease;
+}
+
+.checkbox__text:hover {
+  color: #59D4AD;
+}
+
+.checkbox:active,
+.checkbox:active {
+  outline: 1px solid #59D4AD;
+}
+
+.checkbox--mb {
+  margin-bottom: 47px;
+}
+
+.checkbox__input {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+.checkbox__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 14px;
+  height: 14px;
+  border-radius: 4px;
+  border: 1px solid black;
+  background-color: white;
+  transition-property: border-color background-color;
+  transition-duration: 0.2s;
+  transition-timing-function: ease;
+  margin-right: 10px;
+}
+
+.checkbox__icon {
+  width: 24px;
+  height: 24px;
+  opacity: 0;
+  fill: white;
+  transition: opacity 0.2s ease;
+}
+
+.checkbox__input:checked + .checkbox__button {
+  background-color: black;
+}
+
+.checkbox__input:checked + .checkbox__button .checkbox__icon {
+  opacity: 1;
+}
+
+
+
