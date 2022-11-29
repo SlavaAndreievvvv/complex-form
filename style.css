@@ -219,8 +219,9 @@ body {
   padding: 9px;
 }
 
-.radio:active {
-  box-shadow: 0 0 0 1px #59D4AD;
+.radio:active,
+.radio:focus {
+  outline: 1px solid #59D4AD;
   border-radius: 4px;
 }
 
